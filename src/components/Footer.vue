@@ -8,20 +8,20 @@
 </template>
 
 <script>
-export default {
-name: "Footer"
-}
+    export default {
+    name: "Footer"
+    }
 </script>
 
 <style scoped>
-div{
-  background-color: black;
-}
-footer{
-  position: fixed;
-  bottom: 0;
-  margin: 5px 400px;
+  div{
+    background-color: black;
+  }
+  footer{
+    position: fixed;
+    bottom: 0;
+    margin: 5px 400px;
 
-}
+  }
 
 </style>

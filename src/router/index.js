@@ -4,8 +4,13 @@ import Router from 'vue-router'
 import authRouts from '../components/Auth/auth-routs.js';
 //not found
 import NotFound from "../components/404/NotFound";
-import User from "../components/User";
+//User routes
+import userRoutes from '../components/User/user-routes.js';
+
 Vue.use(Router)
+
+// import VeeValidate from "vee-validate";
+// Vue.use(VeeValidate);
 
 export default new Router({
   routes: [
@@ -15,11 +20,7 @@ export default new Router({
 
     },
     ...authRouts,
-    {
-      path: '/user',
-      name: 'User',
-      component: User
-    },
+    ...userRoutes,
     {
       path: '*',
       name: 'NotFound',

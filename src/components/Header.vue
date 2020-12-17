@@ -13,8 +13,12 @@
             <router-link to="/signup" class=" nav-link">SignUp</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/user" class=" nav-link">User</router-link>
+            <router-link to="/user/dashboard" class=" nav-link">User</router-link>
           </li>
+        <li class="nav-item">
+          <router-link to="/login" class=" nav-link">LogOut</router-link>
+        </li>
+
       </ul>
     </div>
   </nav>
@@ -23,9 +27,9 @@
 </template>
 
 <script>
-export default {
-name: "Header"
-}
+    export default {
+    name: "Header"
+    }
 </script>
 
 <style scoped>
